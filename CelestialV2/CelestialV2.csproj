@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BACEC5B2-4D5B-4701-8622-ADB0F0144CE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CelestialV2</RootNamespace>
+    <AssemblyName>CelestialV2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>D:\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\Celestial\Celestial\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI">
+      <HintPath>..\..\КурсовойПроектSQL\КурсовойПроектSQL\bin\Debug\MetroSet UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aeroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeroForm.Designer.cs">
+      <DependentUpon>aeroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aeroPrilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeroPrilet.Designer.cs">
+      <DependentUpon>aeroPrilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aeroVilet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeroVilet.Designer.cs">
+      <DependentUpon>aeroVilet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cnsldgvr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cnsldgvr.Designer.cs">
+      <DependentUpon>cnsldgvr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateRep.Designer.cs">
+      <DependentUpon>DateRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteclient.Designer.cs">
+      <DependentUpon>deleteclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dgvr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dgvr.Designer.cs">
+      <DependentUpon>dgvr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetDateTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetDateTime.Designer.cs">
+      <DependentUpon>GetDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plane.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plane.Designer.cs">
+      <DependentUpon>Plane.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaneManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaneManage.Designer.cs">
+      <DependentUpon>PlaneManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reis.Designer.cs">
+      <DependentUpon>Reis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report1.Designer.cs">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TickReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TickReceipt.Designer.cs">
+      <DependentUpon>TickReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="КассаDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>КассаDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aeroForm.resx">
+      <DependentUpon>aeroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aeroPrilet.resx">
+      <DependentUpon>aeroPrilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aeroVilet.resx">
+      <DependentUpon>aeroVilet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cnsldgvr.resx">
+      <DependentUpon>cnsldgvr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateRep.resx">
+      <DependentUpon>DateRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteclient.resx">
+      <DependentUpon>deleteclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dgvr.resx">
+      <DependentUpon>dgvr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetDateTime.resx">
+      <DependentUpon>GetDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plane.resx">
+      <DependentUpon>Plane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaneManage.resx">
+      <DependentUpon>PlaneManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reis.resx">
+      <DependentUpon>Reis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.resx">
+      <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket.rdlc" />
+    <EmbeddedResource Include="TickReceipt.resx">
+      <DependentUpon>TickReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSum.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="КассаDataSet.xsc">
+      <DependentUpon>КассаDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="КассаDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>КассаDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="КассаDataSet.xss">
+      <DependentUpon>КассаDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
